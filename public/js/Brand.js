@@ -215,9 +215,6 @@ function elementDisplay(element, display, mode = 'block') {
 
 // APP customize
 function customizeApp() {
-    if (appTitle && BRAND.app?.title) {
-        appTitle.innerHTML = BRAND.app?.title;
-    }
     if (appDescription && BRAND.app?.description) {
         appDescription.textContent = BRAND.app.description;
     }
@@ -253,9 +250,9 @@ function customizeWidget() {
 
 // SITE metadata
 function customizeSite() {
-    if (title && BRAND.site?.title) {
-        title.textContent = BRAND.site?.title;
-    }
+    // if (title && BRAND.site?.title) {
+    //     title.textContent = BRAND.site?.title;
+    // }
     if (icon && BRAND.site?.icon) {
         icon.href = BRAND.site?.icon;
     }
@@ -294,5 +291,9 @@ function customizeWhoAreYou() {
         guestJoinRoomButton.textContent = BRAND.whoAreYou.buttonJoinLabel;
     }
 }
+
+// Disable dynamic title injection
+// Commenting out the line below to prevent overwriting the static title in landing.html
+// appTitle.innerHTML = BRAND.app?.title;
 
 initialize();
