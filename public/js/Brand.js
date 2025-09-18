@@ -37,8 +37,8 @@ const guestJoinRoomButton = document.getElementById('guestJoinRoomButton');
 let BRAND = {
     app: {
         language: 'en',
-        name: 'MiroTalk SFU',
-        title: 'MiroTalk SFU<br />Free browser based Real-time video calls.<br />Simple, Secure, Fast.',
+        name: 'Bharat Online SABHA',
+        title: 'Bharat Online SABHA<br />Free browser based Real-time video calls.<br />Simple, Secure, Fast.',
         description:
             'Start your next video call with a single click. No download, plug-in, or login is required. Just get straight to talking, messaging, and sharing your screen.',
         joinDescription: 'Pick a room name.<br />How about this one?',
@@ -46,7 +46,7 @@ let BRAND = {
         joinLastLabel: 'Your recent room:',
     },
     site: {
-        title: 'MiroTalk SFU, Free Video Calls, Messaging and Screen Sharing',
+        title: 'Bharat Online SABHA, Free Video Calls, Messaging and Screen Sharing',
         icon: '../images/logo.svg',
         appleTouchIcon: '../images/logo.svg',
         newRoomTitle: 'Pick name. <br />Share URL. <br />Start conference.',
@@ -55,9 +55,9 @@ let BRAND = {
     },
     meta: {
         description:
-            'MiroTalk SFU powered by WebRTC and mediasoup, Real-time Simple Secure Fast video calls, messaging and screen sharing capabilities in the browser.',
+            'Bharat Online SABHA powered by WebRTC and mediasoup, Real-time Simple Secure Fast video calls, messaging and screen sharing capabilities in the browser.',
         keywords:
-            'webrtc, miro, mediasoup, mediasoup-client, self hosted, voip, sip, real-time communications, chat, messaging, meet, webrtc stun, webrtc turn, webrtc p2p, webrtc sfu, video meeting, video chat, video conference, multi video chat, multi video conference, peer to peer, p2p, sfu, rtc, alternative to, zoom, microsoft teams, google meet, jitsi, meeting',
+            'webrtc, bharatonline, mediasoup, mediasoup-client, self hosted, voip, sip, real-time communications, chat, messaging, meet, webrtc stun, webrtc turn, webrtc p2p, webrtc sfu, video meeting, video chat, video conference, multi video chat, multi video conference, peer to peer, p2p, sfu, rtc, alternative to, zoom, microsoft teams, google meet, jitsi, meeting',
     },
     html: {
         topSponsors: true,
@@ -83,7 +83,7 @@ let BRAND = {
             <button 
                 id="support-button" 
                 data-umami-event="Support button" 
-                onclick="window.open('https://codecanyon.net/user/miroslavpejic85', '_blank')">
+                onclick="window.open('https://bharat-online.com', '_blank')">
                 <i class="fas fa-heart"></i> Support
             </button>
             <br /><br /><br />
@@ -91,21 +91,21 @@ let BRAND = {
             <a 
                 id="linkedin-button" 
                 data-umami-event="Linkedin button" 
-                href="https://www.linkedin.com/in/miroslav-pejic-976a07101/" 
+                href="https://www.linkedin.com/company/bharatonlinesuperapp" 
                 target="_blank"> 
-                Miroslav Pejic
+                Bharat Online
             </a>
             <br /><br />
             Email: 
             <a 
                 id="email-button" 
                 data-umami-event="Email button" 
-                href="mailto:miroslav.pejic.85@gmail.com?subject=MiroTalk SFU info"> 
-                miroslav.pejic.85@gmail.com
+                href="mailto:contact@bharat-online.com?subject=Bharat Online SABHA info"> 
+                contact@bharat-online.com
             </a>
             <br /><br />
             <hr />
-            <span>&copy; 2025 MiroTalk SFU, all rights reserved</span>
+            <span>&copy; 2025 Bharat Online SABHA, all rights reserved</span>
             <hr />
         `,
     },
@@ -117,9 +117,7 @@ let BRAND = {
         widgetType: 'support',
         supportWidget: {
             position: 'top-right',
-            expertImages: [
-                'https://photo.cloudron.pocketsolution.net/uploads/original/95/7d/a5f7f7a2c89a5fee7affda5f013c.jpeg',
-            ],
+            expertImages: [''],
             buttons: {
                 audio: true,
                 video: true,
@@ -135,7 +133,7 @@ let BRAND = {
                 connectText: 'connect in < 5 seconds',
                 onlineText: 'We are online',
                 offlineText: 'We are offline',
-                poweredBy: 'Powered by MiroTalk SFU',
+                poweredBy: 'Powered by Bharat Online SABHA',
             },
             alert: {
                 enabled: false,
@@ -238,7 +236,7 @@ function customizeWidget() {
         if (typeof MiroTalkWidget !== 'undefined') {
             new MiroTalkWidget(domain, roomId, userName, BRAND.widget);
         } else {
-            console.warn('MiroTalkWidget is not defined in the current context. Please check Widget.js loading.', {
+            console.warn('SabhaWidget is not defined in the current context. Please check Widget.js loading.', {
                 domain,
                 roomId,
                 userName,
